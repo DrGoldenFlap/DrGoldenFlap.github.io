@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(315deg, #362a2a 0%,
+  #202122 74%);
+  font-family: "Source Code Pro", sans-serif;
+  }
+
+li, a, button {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10% ;
+}
+
+.logo{
+  width: 7%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.nav_link li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_link li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover{
+  color: #0088a9
+}
+
+button{
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: rgba(0,136,169,0.8);
+}
+
+.about{
+  width: 100%;
+  padding: 78px 0px;
+  background: linear-gradient(315deg, #362a2a 0%,
+  #202122 74%)}
+
+.about img{
+  height: auto;
+  width: 300px;
+  border-radius: 500px;
+}
+
+.about-me{
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-me h1{
+  color: white;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-me h5{
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.about-me h5 span{
+  color: red;
+}
+
+.about-me p{
+  color: #fcfcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+/*.work{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  height: 415px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-image{
+  background-color: aqua;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.car-1{
+  background-image: url("./images/Frame\ 3.png") ;
+}
+.car-2{
+  background-image: url("./images/Frame\ 4.png") ;
+}
+.car-3{
+  background-image: url("./images/Frame\ 5.png") ;
+}
+.car-4{
+  background-image: url("./images/Frame\ 6.png") ;
+}
+.car-5{
+  background-image: url("./images/Frame\ 7.png") ;
+}
+.car-6{
+  background-image: url("./images/Frame\ 7.png") ;
+}
+
+.card h2{
+  padding: 10px;
+}
+
+.card p{
+  padding: 8px;
+}
+.card a{
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.card:hover {
+  background-color: rgb(62,62,62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}*/
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 25%;
+  min-height: 100vh;  
+  background: linear-gradient(315deg, #362a2a 0%,
+  #202122 74%);
+}
+
+.card{
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #1c2327;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #362a2a;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+
+}
+
+.card::after{
+  content: "Github";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 5.5em;
+  color: rgba(148, 118, 118, 0.1);
+}
+
+.card .imgBx{
+  position: relative;
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+
+.card .imgBx img{
+  max-width: 50%;
+  transition: 0.5s;
+
+}
+
+.card:hover .imgBx img{
+  max-width: 35%;
+}
+
+.card .contentBx{
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.card .contentBx h3{
+  font-size: 19px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBx .disc{
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.card .contentBx .links{
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBx .links{
+  top: 0;
+  opacity: 1;
+}
+
+
+
+.my-links{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(315deg, #362a2a 0%,
+  #202122 74%);
+}
+
+.wrapper .button1{
+display: inline-block;
+height: 60px;
+width: 60px;
+float: left;
+margin: 0 5px;
+overflow: hidden;
+background: white;
+border-radius: 50px;
+cursor: pointer;
+box-shadow: 0px 10px 10px rgba(231, 189, 189, 0.137);
+transition: all .3s ease-out;
+}
+
+.wrapper .button1:hover{
+  width: 200px;
+}
+
+.wrapper .button1 .icon{
+  display: inline-block;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 6px;
+}
+.wrapper .button1:nth-child(1):hover .icon{
+  background: rgb(73, 22, 18);
+}
+.wrapper .button1:nth-child(2):hover .icon{
+  background: rgb(255, 251, 1);
+}
+.wrapper .button1:nth-child(3):hover .icon{
+  background: rgb(46, 77, 180);
+}
+.wrapper .button1 .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button1:hover .icon i {
+  color: white;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
